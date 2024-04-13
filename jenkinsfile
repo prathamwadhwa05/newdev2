@@ -68,7 +68,7 @@ steps {
  
 script{
 
-   sh'docker rm -f ${IMAGE_NAME} || true'
+   sh'docker rm -f devopsassignment || true'
     sh "docker run -d --name devopsassignment -p 8000:80 ${IMAGE_NAME}:${IMAGE_TAG}"
 }
  
